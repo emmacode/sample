@@ -9,7 +9,7 @@ const counter = (state = initialState, action) => {
     case actionTypes.COUNTER:
       return {
         ...state,
-        count: +1
+        count: state.count + 1
       };
     default:
       return state;
